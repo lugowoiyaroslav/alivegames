@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="static/css/main.css"><script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body><!--[if lt IE 10]><div class="browsehappy"><p>Данный сайт построен на передовых, современных технологиях и не поддерживает Ваш браузер. Настоятельно рекомендуем установить любой из современных браузеров. Это бесплатно и займет всего несколько минут.</p></div><![endif]-->
+    <div class="mob__menu--overlay">
+      <div class="mob__menu--wrap">
+        <div class="mob__menu--header"><a class="mob__menu--close" href="#"><img src="static/img/mob-menu-close.png" alt="Закрыть меню"></a></div>
+        <div class="mob__menu--content">
+          <div class="mob__menu--block"></div>
+          <div class="mob__menu--contacts-block"></div><a class="btn" href="#">Оставить заявку</a>
+        </div>
+      </div>
+    </div>
+    <header class="header header__home header__all">
+      <div class="header__top">
+        <div class="container"><a class="mob__menu--open" href="#"><img src="static/img/mob-menu.png" alt="Открыть меню"></a><a class="header__top--logo" href="#"><img src="static/img/logo_top.png" alt=""></a>
+          <ul class="menu">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Услуги</a>
+              <ul>
+                <li><a href="#">Разработка игр</a></li>
+                <li><a href="#">3D моделинг и рендеринг</a></li>
+                <li><a href="#">Иллюстрации и дизайн</a></li>
+                <li><a href="#">Симуляция и визуализация</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="lang"><a class="active__lang" href="#">Ru</a><a href="#">En</a></div>
+        </div>
+      </div>
+    </header>
+    <div class="contacts__page">
+      <section class="contacts">
+        <div id="map"></div>
+        <div class="directions__block--bg">
+          <div class="directions__block--bg-left"></div>
+        </div>
+        <div class="container contacts__form">
+          <div class="contacts__form--blocks contacts__form--blocks-left">
+            <h2>Контактная информация</h2>
+            <ul>
+              <li>
+                <svg class="icon icon-icons_pin ">
+                  <use xlink:href="static/img/svg/symbols.svg#icons_pin"></use>
+                </svg>г. Воскресенск, ул. Берикно д.6
+              </li>
+              <li>
+                <svg class="icon icon-icons_phone ">
+                  <use xlink:href="static/img/svg/symbols.svg#icons_phone"></use>
+                </svg>+7 916 452 87 35
+              </li>
+              <li>
+                <svg class="icon icon-icons_envelope ">
+                  <use xlink:href="static/img/svg/symbols.svg#icons_envelope"></use>
+                </svg>a@musicalive.ru
+              </li>
+            </ul>
+            <h5>Мы в соцсетях</h5>
+            <div class="footer__social"><a href="#">
+                <svg class="icon icon-icons_fb ">
+                  <use xlink:href="static/img/svg/symbols.svg#icons_fb"></use>
+                </svg></a><a href="#">
+                <svg class="icon icon-icons_ig ">
+                  <use xlink:href="static/img/svg/symbols.svg#icons_ig"></use>
+                </svg></a><a href="#">
+                <svg class="icon icon-icons_vk ">
+                  <use xlink:href="static/img/svg/symbols.svg#icons_vk"></use>
+                </svg></a></div>
+          </div>
+          <div class="contacts__form--blocks contacts__form--blocks-right">
+            <h5>Поддержка / Обратная связь</h5>
+            <form action="">
+              <input type="text" placeholder="Ваше имя *" required>
+              <input type="email" placeholder="E-mail *" required>
+              <input type="tel" placeholder="Телефон">
+              <textarea placeholder="Сообщение"></textarea>
+              <button class="btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container"><a class="footer__top--logo" href="#"><img src="static/img/logo_bottom.png" alt=""></a>
+        <div class="footer__menu">
+          <ul>
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__social"><a href="#">
+            <svg class="icon icon-icons_fb ">
+              <use xlink:href="static/img/svg/symbols.svg#icons_fb"></use>
+            </svg></a><a href="#">
+            <svg class="icon icon-icons_ig ">
+              <use xlink:href="static/img/svg/symbols.svg#icons_ig"></use>
+            </svg></a><a href="#">
+            <svg class="icon icon-icons_vk ">
+              <use xlink:href="static/img/svg/symbols.svg#icons_vk"></use>
+            </svg></a></div>
+        <div class="footer__copy">
+          <p>2018 © alivegames.ru</p>
+        </div>
+      </div>
+    </footer><div style="display: none;" id="hidden-content">
+    <div class="form__block--right">
+      <form action="/">
+        <div class="form__contacts">
+          <div class="form__contacts--block">
+            <input type="text" placeholder="Ваше имя *">
+            <input type="text" placeholder="E-mail *">
+            <input type="text" placeholder="Телефон *">
+          </div>
+          <div class="form__contacts--block">
+            <textarea placeholder="Сообщение"></textarea>
+            <buttons class="btn">Отправить</buttons>
+          </div>
+        </div>
+      </form>
+    </div></div>
+    <script src="static/js/libs.min.js"></script><script>svg4everybody();</script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
