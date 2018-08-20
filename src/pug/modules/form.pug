@@ -1,0 +1,15 @@
+section.form
+	.container
+		.form__block--left
+			h2 Оставьте заявку
+			p Если вы хотите обсудить ваш будущий проект, позвоните по телефону<br> <strong>+7 (999) 000-00-00</strong> или заполните форму прямо сейчас
+		.form__block--right
+			form(action="/")
+				.form__contacts
+					.form__contacts--block
+						input(type="text" placeholder="Ваше имя *")
+						input(type="text" placeholder="E-mail *")
+						input(type="text" placeholder="Телефон *")
+					.form__contacts--block
+						textarea( placeholder="Сообщение")
+						button(class="btn" type="submit") Отправить

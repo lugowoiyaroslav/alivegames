@@ -1,0 +1,66 @@
+.footer
+	padding: 96px
+	background-color: $Nero
+	.container
+		@include row-center
+		flex-direction: column
+		align-items: center
+		@include mq('768')
+			flex-wrap: nowrap
+	.footer__menu
+		ul
+			@include row-center
+			list-style: none
+			margin: 49px 0
+			@include mq('768')
+				flex-wrap: nowrap!important
+			@include mq('480')
+				flex-wrap: wrap!important
+			li
+				margin-right: 52px
+				&:last-child
+					margin-right: 0
+				@include mq('1200')
+					margin-right: 22px
+				@include mq('480')
+					margin-right: 0
+					margin-bottom: 20px
+					width: 100%
+					text-align: center
+					&:last-child
+						margin-bottom: 0
+				a
+					color: $White
+					font-family: $RobotoCondensed
+					text-transform: uppercase
+					font-weight: 400
+					font-size: 16px
+					&:hover
+						color: $SunsetOrange
+	.footer__social
+		@include row-center
+		@include mq('480')
+			flex-wrap: nowrap
+		a
+			width: 40px
+			height: 40px
+			@include row-center
+			align-items: center
+			border-radius: 50%
+			background-color: $SuvaGrey
+			margin-right: 26px
+			&:last-child
+				margin-right: 0
+			&:hover
+				background-color: $Matterhorn
+			.icon
+				width: 30px
+				height: 30px
+				fill: $White
+	.footer__copy
+		p
+			color: $White
+			margin-top: 42px
+			margin-bottom: 0
+			@include mq('480')
+				text-align: center

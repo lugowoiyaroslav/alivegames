@@ -1,0 +1,75 @@
+@import 'utils/fonts'
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,700&subset=cyrillic')
+@import 'utils/vars.sass'
+@import 'utils/mixins.sass'
+@import "libs.sass"
+@import "utils/buttons.sass"
+@import "normalize"
+@import 'utils/grid.sass'
+@import 'utils/header.sass'
+@import 'utils/footer.sass'
+@import "utils/_form.sass"
+html
+	line-height: normal
+
+body
+	padding: 0
+	margin: 0
+	font-family: $Roboto
+	font-size: 16px
+	font-weight: 300
+	color: $Nero
+	text-rendering: optimizeLegibility
+	-webkit-font-smoothing: subpixel-antialiased
+	-webkit-font-smoothing: antialiased
+.ie
+	overflow-x: hidden
+*
+	outline: none
+	box-sizing: border-box
+a
+	text-decoration: none
+	transition: color .3s ease-in-out
+ul,figure
+	margin: 0
+	padding: 0
+h1
+	font-family: $RobotoCondensed
+	font-weight: 400
+	font-size: 56px
+	text-transform: uppercase
+	margin: 0
+	@include mq('1200')
+		font-size: 40px
+h3
+	font-family: $RobotoCondensed
+	font-weight: 400
+	font-size: 32px
+	margin: 0
+	text-transform: uppercase
+h4
+	font-family: $RobotoCondensed
+	font-weight: 400
+	font-size: 24px
+	text-transform: uppercase
+h5
+	font-family: $RobotoCondensed
+	font-weight: 700
+	font-size: 18px
+	text-transform: uppercase
+
+p
+	line-height: 23px
+	margin-bottom: 48px
+// Главная страница
+@import 'pages/index/index.sass'
+// Новости
+@import 'pages/news/news.sass'
+// Портфолио
+@import 'pages/portfolio/portfolio.sass'
+// Услуга
+@import 'pages/services/services.sass'
+// Контакты
+@import 'pages/contacts/contacts.sass'
+// Вакансии
+@import 'pages/vacancy/vacancy.sass'

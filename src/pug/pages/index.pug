@@ -1,0 +1,40 @@
+extends ../layout/main
+
+block content
+	section.directions
+		.directions__block--bg
+			.directions__block--bg-left
+			.directions__block--bg-right
+		.container
+			.directions__block--content
+				.directions__block--content-left
+					.directions__block--content-left-content
+						h2 Работаем в направлениях
+						p Команда компании AliveGames занимается игр для любых платформ, а также 3D моделингом и рендерингом. Мы создаем иллюстрации и дизайн, симуляции и визуализацию.
+					a(class="btn" data-fancybox data-src="#hidden-content" href="javascript:;") Заказать бесплатный расчет
+				.directions__block--content-right
+					.directions__block--content-blocks
+						.directions__block-title
+							+icon('work-1')
+							h5 Разработка игр
+						p Мы разрабатываем игры для разных платформ - iOS и Android. Расчет разработки бесплатный.
+					.directions__block--content-blocks
+						.directions__block-title
+							+icon('work-2')
+							h5 3D моделинг<br> и рендеринг
+						p Делаем модели и рендеринг по вашим эскизам и идеям профессионально, быстро, качественно.
+					.directions__block--content-blocks
+						.directions__block-title
+							+icon('work-3')
+							h5 Иллюстрации<br> и дизайн
+						p Наши иллюстраторы и дизайнеры воплотят в виртуальную жизнь любые ваши идеи.
+					.directions__block--content-blocks
+						.directions__block-title
+							+icon('work-4')
+							h5 Симуляция и визуализация
+						p Визуализируем пространство, объекты и любые ваши идеи, сделаем симуляцию.
+	include ../modules/works
+	include ../modules/team
+	include ../modules/about
+	include ../modules/news
+	include ../modules/contacts

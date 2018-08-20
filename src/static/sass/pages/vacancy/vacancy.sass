@@ -1,0 +1,35 @@
+.vacancy__content
+	display: none
+.vacancy
+	padding: 78px 0 96px
+	a
+		font-size: 24px
+		text-transform: uppercase
+		color: $Nero
+		font-family: $RobotoCondensed
+		font-weight: 400
+		position: relative
+		&.active
+			color: $SunsetOrange
+			.icon
+				fill: $SunsetOrange
+				transform: rotate(-180deg)
+		.icon
+			@include mq('768')
+				position: absolute
+				right: 0
+				top: 0
+.vacancy__blocks
+		border-bottom: 1px solid $Nero
+		padding: 18px 0
+		a
+			@include row-between
+			.icon
+				width: 30px
+				height: 30px
+		.main__page
+			padding-top: 0
+			ul
+				margin: 17px 0
+			p
+				margin: 24px 0

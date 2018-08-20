@@ -1,0 +1,47 @@
+extends ../layout/main-all
+
+block content
+	.page__title(style="background-image: url(static/img/bg6.jpg)")
+		.container
+			h1 Вакансии
+	.vacancy
+		.container
+			.vacancy__all
+				.vacancy__blocks
+					a(class="active" href="#") СПЕЦИАЛИСТ ПО ПРИВЛЕЧЕНИЮ ИНОСТРАННЫХ КЛИЕНТОВ
+						+icon('icons_down-arrow') 
+					.vacancy__content(style={display: 'block'})
+						.main__page
+							p Нам нужен человек с хорошим английским, желающий общаться с потенциальными иностранными клиентами. От Вас знание языка, коммуникабельность и способность добиваться целей, от нас - интересные задачи и обучение.
+							strong Мы предлагаем:
+							ul
+								li 
+									+icon('icons_up-arrow') 
+									| Пример маркированного списка
+								li 
+									+icon('icons_up-arrow') 
+									| Пример маркированного списка
+								li 
+									+icon('icons_up-arrow') 
+									| Пример маркированного списка
+							strong Мы предлагаем:
+							ul
+								li 
+									+icon('icons_up-arrow') 
+									| Пример маркированного списка
+								li 
+									+icon('icons_up-arrow') 
+									| Пример маркированного списка
+								li 
+									+icon('icons_up-arrow') 
+									| Пример маркированного списка
+				.vacancy__blocks
+					a(href="#") СПЕЦИАЛИСТ ПО ПРИВЛЕЧЕНИЮ ИНОСТРАННЫХ КЛИЕНТОВ
+						+icon('icons_down-arrow') 
+					.vacancy__content
+						p Секретный подарок каждому, кто купит на год или полтора. И текст текст текст с описанием этого пункта в развернутом виде.
+				.vacancy__blocks
+					a(href="#") СПЕЦИАЛИСТ ПО ПРИВЛЕЧЕНИЮ ИНОСТРАННЫХ КЛИЕНТОВ
+						+icon('icons_down-arrow') 
+					.vacancy__content
+						p Секретный подарок каждому, кто купит на год или полтора. И текст текст текст с описанием этого пункта в развернутом виде.

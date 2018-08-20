@@ -1,0 +1,74 @@
+.contacts__page
+	.contacts
+		height: 796px
+		overflow: hidden
+		@include mq('768')
+			height: 1100px
+		.directions__block--bg
+			@include mq('768')
+				background-color: rgba(0,0,0,.8)
+				height: 865px
+		.directions__block--bg-left
+			width: 100%
+			height: 550px
+		.contacts__form
+			@include row-between
+			padding: 90px 0
+			@include mq('768')
+				background: transparent
+			.contacts__form--blocks
+				width: 50%
+				@include mq('768')
+					width: 100%
+			.contacts__form--blocks-left
+				h5
+					margin-top: 68px
+					margin-bottom: 20px
+					text-transform: none
+			.contacts__form--blocks-right
+				position: relative
+				h5
+					margin-top: 0
+					position: relative
+					left: 238px
+					@include mq('1200')
+						left: 0
+				form
+					position: absolute
+					right: 0
+					@include mq('1200')
+						position: relative
+					@include mq('768')
+						padding: 0 8px
+					.btn
+						padding: 10px 48px
+		#map
+			height: 1360px
+			@include mq('768')
+				top: 0
+				height: 1960px
+	.footer__social
+		@include row-start
+		z-index: 105
+		position: relative
+		@include mq('480')
+			flex-wrap: nowrap
+		@include mq('768')
+			justify-content: center
+			margin-bottom: 38px
+		a
+			width: 40px
+			height: 40px
+			@include row-center
+			align-items: center
+			border-radius: 50%
+			background-color: $SuvaGrey
+			margin-right: 26px
+			&:last-child
+				margin-right: 0
+			&:hover
+				background-color: $Matterhorn
+			.icon
+				width: 30px
+				height: 30px
+				fill: $White

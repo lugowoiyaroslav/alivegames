@@ -1,0 +1,167 @@
+.mob__menu--open
+	display: none
+	position: relative
+	z-index: 102
+	@include mq('1200')
+		display: block
+.mob__menu--overlay
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 9000
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.8)
+.mob__menu--wrap
+	position: relative
+	width: 527px
+	height: 100%
+	overflow: auto
+	background-color: $White
+	transform: translateX(-100%)
+	transition: transform .5s ease-out
+	@include mq('768')
+		width: 400px
+	@include mq('480')
+		width: 280px
+.mob__menu--wrap-open
+	transform: translateX(0)
+.mob__menu--header
+	@include row-end
+	align-items: center
+	height: 37px
+	background-color: $Nero
+.mob__menu--content
+	position: absolute
+	top: 37px
+	right: 32px
+	width: 272px
+	overflow: auto
+	height: 100%
+	@include mq('480')
+		width: calc(100% - 20px)
+		right: 10px
+.mob__menu--block
+	padding: 44px 0
+	border-bottom: 1px solid #f1f1f1
+	ul
+		list-style: none
+		li
+			position: relative
+			margin-bottom: 32px
+			&:last-child
+				margin-bottom: 0
+			a
+				font-family: $RobotoCondensed
+				font-weight: 400
+				color: $Nero
+				margin-right: 33px
+				text-transform: uppercase
+				&:hover
+					color: $SunsetOrange
+			ul
+				background-color: #f1f1f1
+				border-top: 2px solid $SunsetOrange
+				padding-left: 24px
+				padding-top: 24px
+				padding-bottom: 24px
+				margin-top: 10px
+				li
+					margin-bottom: 28px
+					&:last-child
+						margin-bottom: 0
+					a
+						margin-right: 0
+.mob__menu--contacts-block
+	ul
+		list-style: none
+		position: relative
+		padding: 28px 0
+		li
+			font-family: $Roboto
+			font-weight: 300
+			@include row-start
+			align-items: center
+			.icon
+				width: 28px
+				height: 28px
+				fill: #f24843
+				position: relative
+				left: -5px
+				margin-right: 10px
+.mob__menu--close
+	margin-right: 10px
+.header__home
+	position: absolute
+	width: 100%
+	padding: 48px 0
+	z-index: 110
+	@include mq('1200')
+		z-index: 102
+.header__all
+	position: relative
+.header__top--logo
+	img
+		@include mq('480')
+			max-width: 180px
+.header__top
+	.container
+		@include row-between
+		align-items: center
+		ul
+			@include row-start
+			list-style: none
+			li
+				position: relative
+				z-index: 105
+				a
+					font-family: $RobotoCondensed
+					font-weight: 400
+					color: $Nero
+					margin-right: 33px
+					text-transform: uppercase
+					&:hover
+						color: $SunsetOrange
+				&.active>a
+					color: $SunsetOrange
+				&:last-child
+					a
+						margin-right: 0
+				ul
+					display: none
+					position: absolute
+					top: 26px
+					flex-direction: column
+					background-color: $White
+					width: 266px
+					border-top: 2px solid $SunsetOrange
+					padding: 24px
+					box-shadow: 0 4px 10px 0 rgba(0,0,0,.2)
+					li
+						margin-bottom: 28px
+						&:last-child
+							margin-bottom: 0
+						a
+							margin-right: 0
+			@include mq('1200')
+				display: none
+		.lang
+			a
+				font-family: $RobotoCondensed
+				font-weight: 400
+				color: $Nero
+				margin-right: 10px
+				text-transform: uppercase
+				&.active__lang
+					color: $SunsetOrange
+				&:hover
+					color: $SunsetOrange
+				&:last-child
+					a
+						margin-right: 0
+.page__title
+	h1
+		color: $White
+		padding: 38px 0
+

@@ -1,0 +1,875 @@
+.browsehappy
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%;
+	background-color: #fff
+	z-index: 10000
+.browsehappy p
+	position: absolute
+	top: 20%
+	left: 10%
+	background-color: $SunsetOrange
+	padding: 30px
+	color: #fff
+	text-align: center
+	line-height: 30px
+	width: 80%
+.home__slider
+	position: relative
+	background: url(../img/bg1.jpg) no-repeat 50% 0
+	height: 680px
+	@include mq('1200')
+		height: 600px
+	@include mq('768')
+		text-align: center
+.home__slider--nav
+	a
+		position: absolute
+		@include row-center
+		flex-direction: column
+		height: 100%
+		padding: 0 30px
+		transition: all .3s ease-in-out
+		z-index: 101
+		&:hover
+			background: rgba(0, 0, 0, 0.1)
+		.icon
+			width: 30px
+			fill: $Nero
+			transition: fill .3s ease-in-out
+		&:hover
+			.icon
+				fill: $SunsetOrange
+		&.home__slider--nav-next
+			right: 0
+.home__slider--content
+	position: relative
+	top: 184px
+	article
+		position: relative
+		height: 496px
+	h1
+		max-width: 860px
+		font-weight: 300
+		line-height: 70px
+		margin-bottom: 21px
+		@include mq('1200')
+			line-height: 50px
+		@include mq('480')
+			font-size: 24px
+			line-height: 30px
+	figure
+		position: absolute
+		right: 0
+		bottom: 0
+		@include mq('1200')
+			bottom: 80px
+			img
+				width: 304px
+		@include mq('768')
+			img
+				display: none
+	p
+		max-width: 465px
+		margin-top: 0
+		margin-bottom: 35px
+		@include mq('1200')
+			max-width: 400px
+		@include mq('768')
+			max-width: 100%
+.directions
+	position: relative
+	height: 680px
+	@include mq('1200')
+		height: 893px
+	@include mq('768')
+		height: inherit
+		background-color: $Nero
+	.directions__block--bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		@include row-start
+		z-index: -1
+		@include mq('768')
+			display: none
+		.directions__block--bg-left
+			width: 880px
+			background-color: $Nero
+			height: 680px
+			@include mq('1200')
+				height: 893px
+		.directions__block--bg-right
+			width: 1200px
+			background: url(../img/bg2.jpg) no-repeat 0 0/cover
+			height: 680px
+			@include mq('1200')
+				width: 860px
+				height: 893px
+	.directions__block--content
+		@include row-between
+		height: 680px
+		padding: 96px 0
+		@include mq('1200')
+			height: 893px
+		@include mq('768')
+			height: inherit
+			background-color: $Nero
+	.directions__block--content-left
+		@include row-between
+		align-items: flex-start
+		flex-direction: column
+		color: $White
+		width: 368px
+		max-height: 488px
+		@include mq('1200')
+			width: 272px
+			max-height: inherit
+		@include mq('768')
+			width: 100%
+			text-align: center
+			.btn
+				display: none
+		h2
+			font-family: $RobotoCondensed
+			font-weight: 400
+			font-size: 40px
+			text-transform: uppercase
+			margin-top: 0
+			margin-bottom: 28px
+			max-width: 380px
+			@include mq('1200')
+				font-size: 32px
+			@include mq('768')
+				max-width: 300px
+				position: relative
+				margin: 0 auto
+		p
+			max-width: 256px
+			@include mq('768')
+				max-width: 100%
+	.directions__block--content-right
+		@include row-between
+		background: url(../img/bg10.jpg) no-repeat 0 0
+		width: 736px
+		padding: 64px
+		border-radius: 2px
+		@include mq('1200')
+			width: 432px
+			flex-direction: column
+			flex-wrap: nowrap
+			padding: 30px
+			background: url(../img/bg10-pl.jpg) no-repeat 0 0
+		@include mq('768')
+			width: 100%
+			background-size: cover
+	.directions__block--content-blocks
+		width: calc(50% - 30px)
+		overflow: visible
+		@include mq('1200')
+			width: 100%
+		p
+			margin-bottom: 68px
+			@include mq('1200')
+				margin-bottom: 48px
+		&:nth-child(2)
+			p
+				min-width: 300px
+		@include mq('480')
+			&:nth-child(2)
+				p
+					min-width: inherit
+		.directions__block-title
+			@include row-start
+			align-items: flex-start
+			h5
+				/*border-bottom: 2px solid $SunsetOrange*/
+				/*padding-bottom: 10px*/
+				margin: 0
+				max-width: 140px
+				text-transform: uppercase
+				@include mq('1200')
+					max-width: 100%
+					br
+						display: none
+				&:after
+					content: ''
+					display: block
+					margin-top: 10px
+					width: 138px
+					height: 2px
+					background-color: $SunsetOrange
+		.icon
+			fill: $SunsetOrange
+			margin-right: 32px
+		.icon-work-1
+			width: 63px
+			height: 63px
+		.icon-work-2
+			width: 61px
+			height: 61px
+		.icon-work-3
+			width: 64px
+			height: 55px
+		.icon-work-4
+			width: 64px
+			height: 51px
+
+.works
+	position: relative
+	height: 680px
+	@include mq('768')
+		height: inherit
+	.works__block--content
+		@include row-between
+		height: 680px
+		@include mq('768')
+			height: inherit
+	.works__block--content-left
+		color: $White
+		width: 368px
+		padding: 96px 0
+		@include mq('768')
+			width: 100%
+			padding: 96px 0 0
+		.works__block--content-left-content
+			@include row-between
+			align-items: flex-start
+			flex-direction: column
+			height: 100%
+			@include mq('768')
+				align-items: center
+		h2
+			font-family: $RobotoCondensed
+			font-weight: 400
+			color: $Nero
+			font-size: 40px
+			text-transform: uppercase
+			margin-top: 0
+			margin-bottom: 28px
+			@include mq('1200')
+				font-size: 32px
+			@include mq('768')
+				text-align: center
+		ul
+			list-style: none
+			@include mq('768')
+				@include row-center
+			li
+				margin-bottom: 27px
+				&:last-child
+					margin-bottom: 0
+				@include mq('768')
+				a
+					font-weight: 400
+					font-family: $RobotoCondensed
+					color: $Nero
+					text-transform: uppercase
+					@include mq('768')
+						padding: 10px
+					&.active_tab
+						color: $SunsetOrange
+						@include mq('768')
+							border: 1px solid $SunsetOrange
+							border-radius: 3px
+	.works__block--content-right
+		width: 736px
+		@include mq('1200')
+			width: 372px
+		@include mq('768')
+			width: 100%
+			margin-top: 20px
+		figure
+			position: relative
+			width: 50%
+			height: 340px
+			padding: 12px
+			overflow: hidden
+			@include mq('768')
+				height: 214px
+			img
+				position: absolute
+				top: 0
+				left: 0
+				@include mq('1200')
+					width: 100%
+				@include mq('480')
+					height: 100%
+					object-fit: cover
+				&.zoom
+					position: relative
+					width: 30px
+					height: 30px
+					margin: 0 auto
+			figcaption
+				display: none
+				position: relative
+				width: 100%
+				height: 100%
+				background: rgba(242, 72, 67, 0.85)
+				border-radius: 3px
+				padding: 0 50px
+				transition: display 1s ease
+				@include mq('768')
+					padding: 0 15px
+			&:hover
+				figcaption
+					display: flex
+				a
+					width: 100%
+					height: 100%
+					@include row-center
+					flex-direction: column
+				h5
+					margin: 0
+					color: $White
+					font-weight: 700
+					font-size: 18px
+					text-align: center
+					text-transform: uppercase
+					line-height: 24px
+					&:after
+						content: ''
+						position: relative
+						margin: 17px auto 21px
+						display: block
+						height: 2px
+						width: 60%
+						background-color: $White
+	.slick-slide
+		div
+			max-height: 340px!important
+			@include mq('768')
+				max-height: 214px!important
+	.works__slider--nav
+		display: none
+		@include mq('768')
+			display: none!important
+		a
+			display: inline-flex
+			justify-content: center
+			align-items: center
+			width: 42px
+			height: 46px
+			background-color: #f4f4f4
+			&:hover
+				background-color: #e8e8e8
+				.icon
+					fill: $SunsetOrange
+			.icon
+				width: 26px
+				height: 26px
+#nav
+	display: block
+
+.team
+	position: relative
+	height: 680px
+	background: url(../img/bg3.jpg) no-repeat 50% 0
+	@include mq('768')
+		width: 100%
+		height: inherit
+		background-size: cover
+	.team__block--content
+		@include row-between
+		height: 680px
+		@include mq('768')
+			width: 100%
+			height: inherit
+	.team__block--content-left
+		color: $White
+		width: 368px
+		padding: 96px 0
+		@include mq('1200')
+			width: 210px
+		@include mq('768')
+			width: 100%
+			text-align: center
+			padding: 96px 0 0
+		.team__block--content-left-content
+			@include row-between
+			align-items: flex-start
+			flex-direction: column
+			height: 100%
+			max-height: 488px
+		h2
+			font-family: $RobotoCondensed
+			font-weight: 400
+			color: $White
+			font-size: 40px
+			text-transform: uppercase
+			margin-top: 0
+			margin-bottom: 28px
+			max-width: 380px
+			@include mq('1200')
+				font-size: 32px
+			@include mq('768')
+				max-width: 100%
+		p
+			max-width: 256px
+			@include mq('768')
+				max-width: 100%
+	.team__block--content-right
+		width: 736px
+		padding: 96px 0
+		@include mq('1200')
+			width: 480px
+		@include mq('768')
+			padding: 0 0 96px
+			width: 100%
+		figure
+			position: relative
+			width: 224px!important
+			height: 224px!important
+			margin-right: 30px
+			padding: 12px
+			@include mq('768')
+				margin-right: 15px
+			@include mq('480')
+				margin-right: 0
+			img
+				position: absolute
+				top: 0
+				left: 0
+				border-radius: 3px
+			figcaption
+				display: none
+				position: relative
+				width: 100%
+				height: 100%
+				background: rgba(242, 72, 67, 0.85)
+				border-radius: 3px
+				transition: display 1s ease
+			&:hover
+				figcaption
+					display: flex
+				h5
+					margin: 0
+					color: $White
+					font-weight: 700
+					font-size: 18px
+					text-align: center
+					text-transform: uppercase
+					line-height: 24px
+				.icon
+					width: 24px
+					height: 24px
+					fill: $White
+				.skype
+					.icon
+						width: 30px
+						height: 28px
+	.team__slider--nav
+		position: relative
+		top: -10px
+		@include mq('768')
+			display: none
+		a
+			display: inline-flex
+			justify-content: center
+			align-items: center
+			width: 42px
+			height: 46px
+			background-color: rgba(255, 255, 255, 0.05)
+			.icon
+				width: 26px
+				height: 26px
+				fill: $White
+			&:hover
+				.icon
+					fill: $SunsetOrange
+.team__wrap
+	@include row-between
+	flex-direction: column
+	align-items: center
+	margin: 0!important
+	width: 100%
+	padding: 22px 45px
+	.prof
+		display: block
+		margin-top: 20px
+		color: $White
+		font-size: 14px
+		text-align: center
+.team__name
+	margin: 0!important
+.team__name--contacts
+	position: relative
+	@include row-between
+	margin: 0!important
+	width: 100%
+.team
+	.slick-slide
+		div
+			max-height: 224px!important
+			margin-bottom: 30px
+			@include mq('768')
+				margin-bottom: 15px
+			@include mq('480')
+				text-align: center
+.team__pages
+	background: $Nero
+.about
+	position: relative
+	height: 680px
+	padding: 96px 0
+	@include mq('1200')
+		height: inherit
+	.container
+		@include row-between
+		.about__left--block
+			@include row-between
+			width: 640px
+			@include mq('1200')
+				width: 448px
+			h2
+				font-family: $RobotoCondensed
+				font-weight: 400
+				color: $Nero
+				font-size: 40px
+				text-transform: uppercase
+				margin-top: 0
+				margin-bottom: 28px
+				@include mq('1200')
+					font-size: 32px
+			p
+				max-width: 600px
+				margin-bottom: 23px
+				@include mq('1200')
+					max-width: 432px
+					&:nth-child(3)
+						display: none
+				@include mq('768')
+					&:nth-child(3)
+						display: block
+			a
+				color: $SunsetOrange
+				border-bottom: 1px solid $SunsetOrange
+				text-transform: uppercase
+				font-size: 13px
+				font-weight: 700
+
+	.about__right--block
+		width: 447px
+		@include mq('1200')
+			width: 304px
+			img
+				width: 100%
+		@include mq('768')
+			width: 100%
+			.about__left--block-link
+				margin-top: 35px
+			a
+				color: $SunsetOrange
+				border-bottom: 1px solid $SunsetOrange
+				text-transform: uppercase
+				font-size: 13px
+				font-weight: 700
+.news
+	position: relative
+	height: 528px
+	padding: 96px 0
+	background: url(../img/bg4.jpg) no-repeat 50% 0
+	@include mq('1200')
+		height: inherit
+	.news__header
+		@include row-between
+		align-items: center
+		h2
+			font-family: $RobotoCondensed
+			font-weight: 400
+			color: $White
+			font-size: 40px
+			text-transform: uppercase
+			margin-top: 0
+			margin-bottom: 40px
+			@include mq('1200')
+				font-size: 32px
+	.news__slider--nav
+		position: relative
+		top: -14px
+		a
+			display: inline-flex
+			justify-content: center
+			align-items: center
+			width: 42px
+			height: 46px
+			background-color: rgba(255, 255, 255, 0.05)
+			.icon
+				width: 26px
+				height: 26px
+				fill: $White
+	.news__item
+		position: relative
+		width: 545px
+		margin-right: 30px
+		@include mq('1200')
+			width: 366px
+			margin-right: 18px
+		@include mq('768')
+			width: 464px
+			margin-right: 0
+		.news__item--img
+			width: 352px
+			height: 248px
+			position: relative
+			border-radius: 3px
+			overflow: hidden
+			@include mq('1200')
+				width: 240px
+				height: 168px
+			@include mq('768')
+				width: 304px
+				height: 215px
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				top: 0
+				background: url(../img/img_bg.png) no-repeat 0 0
+				width: 100%
+				height: 149px
+			img
+				@include mq('480')
+					width: 100%
+					height: 100%
+		.news__item--date
+			position: absolute
+			top: 25px
+			left: 25px
+			font-size: 24px
+			font-weight: 400
+			color: $White
+			@include mq('480')
+				display: none
+			.big__date
+				font-weight: 700
+				font-size: 48px
+		.news__item--content
+			@include row-between
+			flex-direction: column
+			align-items: flex-start
+			background-color: $White
+			width: 255px
+			height: 185px
+			padding: 23px 28px
+			position: absolute
+			top: 30px
+			right: 0
+			border-radius: 3px
+			@include mq('1200')
+				height: 133px
+				width: 240px
+				padding: 23px
+				top: 17px
+			@include mq('768')
+				height: 150px
+				top: 32px
+			h5
+				text-transform: uppercase
+				margin: 0
+				max-width: 200px
+			a
+				color: $SunsetOrange
+				border-bottom: 1px solid $SunsetOrange
+				text-transform: uppercase
+				font-size: 13px
+				font-weight: 700
+				@include mq('1200')
+					display: none
+				@include mq('768')
+					display: block
+.contacts
+	height: 696px
+	position: relative
+	@include mq('768')
+		height: 900px
+	.directions__block--bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		@include row-start
+		@include mq('768')
+			height: 620px
+			background-color: $Nero
+			z-index: 106
+		.directions__block--bg-left
+			width: 880px
+			background-color: rgba(0, 0, 0, 0.8)
+			height: 696px
+			position: relative
+			z-index: 103
+			@include mq('768')
+				background-color: transparent
+		.directions__block--bg-right
+			width: 1200px
+			background: transparent
+			height: 696px
+			z-index: -1
+	#map
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		z-index: 102
+		@include mq('768')
+			height: 280px
+			top: 620px
+	.bg__map
+		width: 860px
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		z-index: 100
+		background-color: rgba(0, 0, 0, 0.83)
+	.contacts__form
+		position: relative
+		height: 696px
+		padding: 62px 0
+		color: $White
+		@include mq('1200')
+			padding: 62px 8px
+		@include mq('768')
+			height: 620px
+			background-color: $Nero
+			z-index: 107
+			text-align: center
+		h2
+			margin-top: 0
+			font-family: $RobotoCondensed
+			font-weight: 400
+			color: $White
+			font-size: 40px
+			text-transform: uppercase
+			margin-top: 0
+			margin-bottom: 40px
+			max-width: 200px
+			position: relative
+			z-index: 104
+			@include mq('1200')
+				font-size: 32px
+			@include mq('768')
+				max-width: 100%
+		ul
+			list-style: none
+			position: relative
+			z-index: 104
+			li
+				font-family: $Roboto
+				font-weight: 300
+				@include row-start
+				align-items: center
+				a
+					color: $White
+				@include mq('768')
+					justify-content: center
+				.icon
+					width: 28px
+					height: 28px
+					fill: #f24843
+					position: relative
+					left: -5px
+					margin-right: 10px
+					@include mq('768')
+						left: 0
+		h5
+			text-transform: uppercase
+			position: relative
+			z-index: 104
+			margin-bottom: 19px
+			margin-top: 42px
+		form
+			width: 340px
+			position: relative
+			z-index: 104
+			@include mq('1200')
+				width: 280px
+			@include mq('768')
+				width: 100%
+			input
+				display: block
+				width: 100%
+				background: rgba(255, 255, 255, 0.1)
+				border: none
+				margin-bottom: 13px
+				height: 38px
+				border-radius: 3px
+				padding-left: 12px
+			textarea
+				display: block
+				width: 100%
+				background: rgba(255, 255, 255, 0.1)
+				border: none
+				height: 71px
+				border-radius: 3px
+				padding-left: 12px
+				padding-top: 12px
+				resize: none
+			button
+				border: none
+				margin-top: 20px
+				cursor: pointer
+				padding: 10px 48px
+[class*="ymaps-2"][class*="-ground-pane"]
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")
+	-webkit-filter: grayscale(100%)
+
+@media only screen and (min-width: 1921px)
+	.home__slider,.team,.news,.form
+		background-size: cover
+	.page__title
+		background-repeat: no-repeat
+		background-size: cover
+
+.article
+	padding-top: 58px
+	p
+		margin-top: 0
+		margin-bottom: 24px
+.alignright
+	position: relative
+	float: right
+	padding-left: 56px
+	padding-bottom: 56px
+	@include mq('1200')
+		width: 304px
+		padding-left: 25px
+		padding-bottom: 25px
+	@include mq('768')
+		float: none
+		padding: 0
+		width: 100%
+		margin-top: 24px
+.photo__work
+	h3
+		margin: 10px 0 25px
+	p
+		margin: 46px 0 46px
+.photo__work--slider-block
+	position: relative
+	.photo__work__slider--nav
+		position: absolute
+		bottom: 0
+		left: 0
+		z-index: 90
+		a
+			display: inline-flex
+			justify-content: center
+			align-items: center
+			width: 42px
+			height: 46px
+			background-color: rgba(255, 255, 255, 0.05)
+			.icon
+				width: 26px
+				height: 26px
+				fill: $White
+			&:hover
+				.icon
+					fill: $SunsetOrange

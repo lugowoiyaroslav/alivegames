@@ -1,0 +1,76 @@
+.form
+	height: 444px
+	background: url(../img/bg4.jpg) no-repeat 50% 0
+	padding: 91px 0 61px
+	@include mq('768')
+		height: 100%
+		background-size: cover
+		padding: 91px 0
+	.container
+		@include row-between
+		@include mq('1200')
+			align-items: flex-start
+		@include mq('768')
+			flex-direction: column
+.form__block--left
+	max-width: 320px
+	color: $White
+	@include mq('1200')
+		max-width: 220px
+	@include mq('768')
+		max-width: 100%
+		text-align: center
+	h2
+		font-family: $RobotoCondensed
+		font-weight: 400
+		text-transform: uppercase
+		font-size: 40px
+		margin-top: 0
+		margin-bottom: 28px
+		color: #fff
+		@include mq('1200')
+			font-size: 32px
+	strong
+		font-weight: 700
+	a
+		color: $White
+.form__block--right
+	background-color: $White
+	padding: 28px
+	border-radius: 3px
+	min-width: 736px
+	@include mq('1200')
+		min-width: 436px
+	@include mq('768')
+		min-width: 100%
+.form__contacts
+	@include row-between
+	@include mq('768')
+		flex-direction: column
+	.form__contacts--block
+		@include row-start
+		align-items: flex-end
+		flex-direction: column
+		width: calc(50% - 15px)
+		@include mq('768')
+			width: 100%
+		input
+			height: 38px
+			width: 100%
+			padding-left: 15px
+			background-color: #f4f4f4
+			border-radius: 3px
+			margin-bottom: 15px
+			border: none
+		textarea
+			height: 145px
+			width: 100%
+			padding-left: 15px
+			padding-top: 10px
+			background-color: #f4f4f4
+			border-radius: 3px
+			margin-bottom: 20px
+			border: none
+		.btn
+			padding: 13px 48px
+			cursor: pointer

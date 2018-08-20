@@ -1,0 +1,130 @@
+.portfolio
+	margin-bottom: 91px
+	.container
+		@include row-between
+	.portfolio__block
+		width: calc(33.333% - 11px)
+		height: 335px
+		margin-top: 17px
+		@include mq('1200')
+			height: 221px
+			margin-top: 16px
+		@include mq('768')
+			width: 50%
+			margin-top: 0
+			height: 214px
+		@include mq('480')
+			width: 288px
+			height: 266px
+			position: relative
+			margin: 0 auto
+		figure
+			width: 100%
+			height: 100%
+			position: relative
+			padding: 12px
+			@include mq('480')
+				width: 288px
+				height: 266px
+			img
+				width: 100%
+				position: absolute
+				top: 0
+				left: 0
+				&.zoom
+					position: relative
+					width: 30px
+					height: 30px
+					margin: 0 auto
+			figcaption
+				display: none
+				position: relative
+				width: 100%
+				height: 100%
+				background: rgba(242, 72, 67, 0.85)
+				border-radius: 3px
+				padding: 0 50px
+				transition: display 1s ease
+				@include mq('768')
+					padding: 0 15px
+			&:hover
+				figcaption
+					display: flex
+				a
+					width: 100%
+					height: 100%
+					@include row-center
+					flex-direction: column
+				h2
+					margin: 0
+					color: $White
+					font-weight: 700
+					font-size: 18px
+					text-align: center
+					text-transform: uppercase
+					line-height: 24px
+					@include mq('1200')
+						font-size: 12px
+					&:after
+						content: ''
+						position: relative
+						margin: 17px auto 21px
+						display: block
+						height: 2px
+						width: 60%
+						background-color: $White
+.portfolio__nav
+	margin-top: 62px
+	margin-bottom: 22px
+	a
+		padding: 10px 36px
+		@include mq('480')
+			padding: 10px 16px
+.project__title
+	margin-top: 24px
+	margin-bottom: 30px!important
+.project__description
+	p
+		color: $White
+		max-width: 600px
+		margin: 0
+.works__pages
+	background: $Nero
+	.works__block--content-left-content
+		h2
+			color: $White
+		ul
+			li
+				a
+					color: $White
+	.works__slider--nav
+		a
+			background-color: rgba(255,255,255,.05)
+			&:hover
+				background-color: rgba(255,255,255,.05)
+			.icon
+				fill: $White
+.video
+	padding-bottom: 96px
+	.container
+		@include row-between
+	.video__block--left
+		max-width: 540px
+		@include mq('1200')
+			max-width: 100%
+		p
+			margin-bottom: 24px
+	.video__block--right
+		max-width: 540px
+		@include mq('1200')
+			max-width: 100%
+		@include mq('480')
+			@include row-center
+		iframe
+			width: 540px
+			@include mq('1200')
+				width: 752px
+				height: 480px
+			@include mq('768')
+				width: 450px
+				height: 302px

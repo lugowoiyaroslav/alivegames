@@ -1,0 +1,193 @@
+.news__category
+	padding: 56px 0 63px
+.news__nav
+	@include row-center
+	align-items: center
+	margin-bottom: 56px
+	a
+		font-family: $RobotoCondensed
+		font-weight: 700
+		padding: 10px 40px
+		font-size: 18px
+		color: $Nero
+		text-transform: uppercase
+		@include mq('1200')
+			padding: 10px 16px
+		@include mq('768')
+			padding: 10px
+		&:last-child
+			margin-right: 0
+		&:hover
+			color: $SunsetOrange
+		&.nav__active
+			color: $SunsetOrange
+			border: 1px solid $SunsetOrange
+			border-radius: 3px
+.news__section
+	@include row-between
+	.news__sections
+		width: calc(50% - 16px)
+		margin-bottom: 32px
+		position: relative
+		@include mq('1200')
+			width: calc(50% - 8px)
+			margin-bottom: 16px
+		@include mq('768')
+			width: 100%
+			margin-bottom: 32px
+		.news__item--img
+			width: 352px
+			height: 248px
+			position: relative
+			border-radius: 3px
+			overflow: hidden
+			@include mq('1200')
+				width: 240px
+				height: 168px
+			@include mq('768')
+				width: 304px
+				height: 215px
+			@include mq('480')
+				width: 280px
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: 0
+				top: 0
+				background: url(../img/img_bg.png) no-repeat 0 0
+				width: 100%
+				height: 149px
+		.news__item--date
+			position: absolute
+			top: 25px
+			left: 25px
+			font-size: 24px
+			font-weight: 400
+			color: $White
+			@include mq('480')
+				display: none
+			.big__date
+				font-weight: 700
+				font-size: 48px
+		.news__item--content
+			@include row-between
+			flex-direction: column
+			align-items: flex-start
+			background-color: #f1f1f1
+			width: 255px
+			height: 185px
+			padding: 23px 28px
+			position: absolute
+			top: 31px
+			right: 0
+			border-radius: 3px
+			@include mq('1200')
+				height: 133px
+				width: 240px
+				padding: 23px
+				top: 17px
+			@include mq('768')
+				height: 150px
+				top: 32px
+			h2
+				font-size: 18px
+				margin: 0
+				max-width: 200px
+			a
+				color: $SunsetOrange
+				border-bottom: 1px solid $SunsetOrange
+				text-transform: uppercase
+				font-size: 13px
+				font-weight: 700
+				@include mq('1200')
+					display: none
+				@include mq('768')
+					display: block
+.page__title--page
+	padding: 91px 0
+	.container
+		@include row-between
+		flex-direction: column
+		flex-wrap: nowrap
+		height: 100%
+	.page__date
+		color: $White
+		font-size: 18px
+		font-weight: 400
+		font-family: $RobotoCondensed
+		margin-top: 18px
+	h1
+		padding: 0
+		max-width: 700px
+		margin-top: 31px
+		margin-bottom: 12px
+		@include mq('480')
+			font-size: 30px
+.breadcrumbs
+	ul
+		list-style: none
+		@include row-start
+		li
+			margin-right: 7px
+			a
+				color: $SunsetOrange
+				font-family: $RobotoCondensed
+				text-transform: uppercase
+				font-size: 18px
+				font-weight: 400
+				@include mq('480')
+					font-size: 14px
+				&:hover
+					border-bottom: 1px solid $SunsetOrange
+			span
+				color: $SunsetOrange
+.main__page
+	padding-top: 55px
+	p
+		margin-top: 0
+		margin-bottom: 24px
+	h3
+		margin-bottom: 21px
+		padding-top: 9px
+	h4
+		margin-bottom: 24px
+		padding-top: 10px
+	h5
+		margin-bottom: 25px
+		padding-top: 18px
+	strong
+		font-weight: 700
+	ul
+		list-style: none
+		position: relative
+		left: -5px
+		margin: 34px 0
+		li
+			@include row-start
+			align-items: center
+			margin-bottom: 8px
+			.icon
+				position: relative
+				top: - 2px
+				width: 20px
+				height: 20px
+				fill: $SunsetOrange
+				transform: rotate(90deg)
+.page__social
+	&:before
+		content: ''
+		width: 296px
+		height: 1px
+		background-color: #f1f1f1
+		display: block
+		margin-bottom: 26px
+.news__category--page-title
+	h2
+		font-family: $RobotoCondensed
+		font-weight: 400
+		text-transform: uppercase
+		font-size: 40px
+		margin-top: 31px
+		margin-bottom: 49px
+		color: $Nero

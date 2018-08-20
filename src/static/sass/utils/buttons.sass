@@ -1,0 +1,29 @@
+.btn
+	background-color: $SunsetOrange
+	position: relative
+	color: $White
+	display: inline-block
+	padding: 13px 24px
+	font-weight: 700
+	font-size: 13px
+	text-transform: uppercase
+	letter-spacing: 1px
+	border: none
+	border-radius: 2px
+	box-shadow: 4px 4px 10px 0 rgba(0,0,0,.2)
+	overflow: hidden
+	@include mq('1200')
+		padding: 13px 15px
+	&:before
+		content: ''
+		width: 0
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-color: rgba(255, 255, 255, 0.25)
+		transition: width .3s
+	&:hover
+		&:before
+			content: ''
+			width: 100%

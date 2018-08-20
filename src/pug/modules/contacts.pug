@@ -1,0 +1,24 @@
+section.contacts
+	div#map
+	.directions__block--bg
+		.directions__block--bg-left
+		.directions__block--bg-right
+	.container.contacts__form
+		h2 Контактная информация
+		ul
+			li
+				+icon('icons_pin')
+				| г. Воскресенск, ул. Берикно д.6
+			li
+				+icon('icons_phone')
+				| +7 916 452 87 35
+			li
+				+icon('icons_envelope')
+				| a@musicalive.ru
+		h5 Напишите нам
+		form(action="")
+			input(type="text" placeholder="Ваше имя")
+			input(type="text" placeholder="E-mail")
+			textarea(placeholder="Сообщение")
+			button(class="btn" type="submit") Отправить
+

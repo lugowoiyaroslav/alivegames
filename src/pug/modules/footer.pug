@@ -1,0 +1,37 @@
+footer.footer
+	.container
+		a(class="footer__top--logo" href="#")
+			img(src="static/img/logo_bottom.png", alt="")
+		.footer__menu
+			ul
+				li
+					a(href="#") Компания
+				li
+					a(href="#") Услуги
+				li
+					a(href="#") Портфолио
+				li
+					a(href="#") Новости
+				li
+					a(href="#") Контакты
+		.footer__social
+			a(href="#")
+				+icon('icons_fb')
+			a(href="#")
+				+icon('icons_ig')
+			a(href="#")
+				+icon('icons_vk')
+		.footer__copy
+			p 2018 © alivegames.ru
+<div style="display: none;" id="hidden-content">
+	.form__block--right
+		form(action="/")
+			.form__contacts
+				.form__contacts--block
+					input(type="text" placeholder="Ваше имя *")
+					input(type="text" placeholder="E-mail *")
+					input(type="text" placeholder="Телефон *")
+				.form__contacts--block
+					textarea( placeholder="Сообщение")
+					buttons(class="btn") Отправить
+</div>

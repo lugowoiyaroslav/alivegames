@@ -1,0 +1,59 @@
+extends ../layout/main-all
+
+block content
+	.page__title(style="background: url(static/img/bg6.jpg) no-repeat 50% 0/cover")
+		.container
+			h1 Портфолио
+	.portfolio
+		.container
+			nav.news__nav.portfolio__nav
+				a(href="#") Разработка игр
+				a(class="nav__active" href="#") 3D моделинг и рендеринг
+				a(href="#") Иллюстрации и дизайн
+				a(href="#") Симуляция и визуализация
+
+		.container
+			section.portfolio__block
+				figure
+					img(src="static/img/img1.jpg", alt="")
+					figcaption
+						a(href="#")
+							h2 Визуализация персонажа по эскизам
+							img(class="zoom" src="static/img/lupa.png", alt="")
+			section.portfolio__block
+				figure
+					img(src="static/img/img22.jpg", alt="")
+					figcaption
+						a(href="#")
+							h2 Визуализация персонажа по эскизам
+							img(class="zoom" src="static/img/lupa.png", alt="")
+			section.portfolio__block
+				figure
+					img(src="static/img/img23.jpg", alt="")
+					figcaption
+						a(href="#")
+							h2 Визуализация персонажа по эскизам
+							img(class="zoom" src="static/img/lupa.png", alt="")
+			section.portfolio__block
+				figure
+					img(src="static/img/img1.jpg", alt="")
+					figcaption
+						a(href="#")
+							h2 Визуализация персонажа по эскизам
+							img(class="zoom" src="static/img/lupa.png", alt="")
+			section.portfolio__block
+				figure
+					img(src="static/img/img23.jpg", alt="")
+					figcaption
+						a(href="#")
+							h2 Визуализация персонажа по эскизам
+							img(class="zoom" src="static/img/lupa.png", alt="")
+			section.portfolio__block
+				figure
+					img(src="static/img/img22.jpg", alt="")
+					figcaption
+						a(href="#")
+							h2 Визуализация персонажа по эскизам
+							img(class="zoom" src="static/img/lupa.png", alt="")
+
+	include ../modules/form
